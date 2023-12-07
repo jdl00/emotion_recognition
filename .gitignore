@@ -1,0 +1,18 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+**/.DS_Store
+
+
+
+# Machine learning/data science
+# Model outputs and other data not necessary for the project to run
+*.model
+*.h5
+*.checkpoint
+
+
+# Datasets
+*.jpg
+*.dataset
+*.log
+data/
