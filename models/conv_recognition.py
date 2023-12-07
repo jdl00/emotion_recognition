@@ -76,7 +76,7 @@ class ConvRecogntion:
         ])
 
         self.__model.compile(optimizer='adam',
-                             loss='categorical_crossentropy',
+                             loss='mean_squared_error',
                              metrics=['accuracy'])
 
         # Display the model structure
