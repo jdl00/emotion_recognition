@@ -23,7 +23,7 @@ The model architecture is based on the principles outlined in the referenced pap
 
 ## Training Dataset
 
-The dataset used for training is the [FER-2013](https://www.kaggle.com/datasets/msambare/fer2013/). It contains images which are categorised to one of 7 categories being *0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral*. The features of the dataset:
+The dataset used for training is the [FER-2013](https://www.kaggle.com/datasets/msambare/fer2013/). It contains images which are categorised to one of 7 categories being _0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral_. The features of the dataset:
 
 - Training set of 28,709 examples in the training set, 3,589 in the testing set
 - Faces are already centered and occupies roughly the same amount of space
@@ -33,61 +33,71 @@ The dataset used for training is the [FER-2013](https://www.kaggle.com/datasets/
 To set up the project, follow these steps:
 
 1. Clone the repository \
-`git clone https://github.com/jdl00/emotion_recognition`
+   `git clone https://github.com/jdl00/emotion_recognition`
 
 2. Install the required libraries \
-`pip install -r requirements.txt`
+   `pip install -r requirements.txt`
 
 ## Usage
 
 1. To train the model run the train command
 
-    ```
-    # Environment variables
+   ```
+   # Environment variables
 
-    # Folder to export the model to
-    EXPORT MODEL_EXPORT_PATH='folder_to_export_model_run_to'
+   # Folder to export the model to
+   EXPORT MODEL_EXPORT_PATH='folder_to_export_model_run_to'
 
-    # Dataset path to be used (classifiers are pulled from the dataset)
-    EXPORT DATASET='dataset_path'
+   # Dataset path to be used (classifiers are pulled from the dataset)
+   EXPORT DATASET='dataset_path'
 
-    # By default models are quantised and optimised, to disable this you can export
-    EXPORT NO_OPTIMISE 1
+   # By default models are quantised and optimised, to disable this you can export
+   EXPORT OPTIMISE=0 (to turn off optimisation)
 
-    # Finally execute the train script
-    'ENV_VARIABLES' python train.py
-    ```
+   # Set the amount of epochs to train for
+   EXPORT EPOCHS=200
+
+   # Patience till training early stops
+   EXPORT patience=5
+
+   # Finally execute the train script
+   'ENV_VARIABLES' python train.py
+   ```
 
 2. Perform recognition on camera input
 
-    The realtime input to the model uses Pythons OpenCV library. You can specify which input by using the device_id
+   The realtime input to the model uses Pythons OpenCV library. You can specify which input by using the device_id
 
-    ```
-    # Environment variables:
+   ```
+   # Environment variables:
 
-    # Device ID of the camera
-    EXPORT DEVICE_ID='device_id_of_camera'
+   # Device ID of the camera
+   EXPORT DEVICE_ID='device_id_of_camera'
 
-    # Path to the exported model
-    EXPORT MODEL_PATH='exported_model_path'
+   # Path to the exported model
+   EXPORT MODEL_PATH='exported_model_path'
 
-    # Finally execute the recognition script
-    'ENV_VARIABLES' python recognition.py
-    ```
+   # Finally execute the recognition script
+   'ENV_VARIABLES' python recognition.py
+   ```
 
 ## Results
 
 `TODO: Complete this section.`
 
 ## Contributing
+
 Contributions to this project are welcome. To contribute:
+
 1. Fork the repository.
 2. Create a new branch for your feature (`git checkout -b feature/your_feature`).
 3. Commit your changes (`git commit -m 'Add some feature'`).
 4. Push to the branch (`git push origin feature/your_feature`).
 5. Create a new Pull Request.
 
-*Note: Adjust these instructions based on how you wish others to contribute to your project.*
+_Note: Adjust these instructions based on how you wish others to contribute to your project._
 
 ## License
-[MIT License](LICENSE.md) *(or specify another license if applicable)*
+
+[MIT License](LICENSE.md)
+
