@@ -2,7 +2,7 @@
 
 ## Description
 
-This project aims to implement emotion recognition using convolutional neural networks (CNNs), inspired by the architectures and methodologies described in "[A New Method for Face Recognition Using Convolutional Neural Network](http://advances.vsb.cz/index.php/AEEE/article/view/2389/1292)" and "[Facial Expression Recognition in the Wild via Deep Attentive Networks](https://iopscience.iop.org/article/10.1088/1742-6596/1844/1/012004/pdf)". The project utilizes TensorFlow and Keras for model development, with a focus on achieving high accuracy in detecting human emotions from facial images.
+This project aims to implement emotion recognition using convolutional neural networks (CNNs), inspired by the architectures and methodologies described in "[Facial Emotion Recognition: State of the Art Performance on FER2013](https://arxiv.org/ftp/arxiv/papers/2105/2105.03588.pdf)" and "[Facial Expression Recognition in the Wild via Deep Attentive Networks](https://iopscience.iop.org/article/10.1088/1742-6596/1844/1/012004/pdf)". The project utilizes TensorFlow and Keras for model development, with a focus on achieving high accuracy in detecting human emotions from facial images.
 
 ## Features
 
