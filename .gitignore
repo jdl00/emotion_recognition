@@ -1,6 +1,6 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
-**/.DS_Store
+.DS_Store
 
 
 
@@ -14,5 +14,6 @@ __pycache__/
 # Datasets
 *.jpg
 *.dataset
+/datasets
 *.log
 data/
